@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 import TokenSelect from 'components/TokenSelect';
+import InputWithButton from 'components/InputWithButton';
+import Switch from 'react-switch';
 import './CenterForm.scss';
 
 const CenterForm = ({ tab }) => {
+  const [checked, handleChange] = useState(false);
+
   return (
     <div className="centerform-two-columns-container centerform">
       <div className="centerform_subform">
@@ -13,14 +17,14 @@ const CenterForm = ({ tab }) => {
             <div className="input-area-with-header no-border">
               <div className="input-area-with-header_label">
                 <h6>Add Liquidity</h6>
-              </div>            
-            </div> 
+              </div>
+            </div>
           </div>
           <div className="col-lg-6">
             <div className="input-area-with-header no-border">
               <div className="input-area-with-header_label">
                 <h6>Select Staking Period</h6>
-              </div>            
+              </div>
             </div>
           </div>
         </div>
@@ -29,16 +33,14 @@ const CenterForm = ({ tab }) => {
             {/* // Add liquidity */}
             <div className="input-area mt-2">
               <div className="input-area_row">
-                <div className="input-area_row_left_column">
-                  Input
-                </div>
+                <div className="input-area_row_left_column">Input</div>
                 <div className="input-area_row_right_column top-right-ab-pos">
                   Balance: 1.000002
                 </div>
               </div>
               <div className="input-area_row mt-5px">
                 <div className="input-area_row_left_column">
-                <input type="number" defaultValue={1.0000021} />
+                  <InputWithButton maxValue={1.000002} />
                 </div>
                 <div className="input-area_row_right_column">
                   <TokenSelect />
@@ -49,30 +51,63 @@ const CenterForm = ({ tab }) => {
           <div className="col-lg-6 d-flex">
             <div className="input-area-with-header mt-auto w-100">
               <div className="input-area-with-header_area">
-                <div class="">
-                  <p>30<br/>Days</p>
-                  <input type="radio" checked="checked" name="radio"/>
-                  <span class="checkmark"></span>
+                <div className="">
+                  <p>
+                    30
+                    <br />
+                    Days
+                  </p>
+                  <input type="radio" checked="checked" name="radio" />
+                  <span className="checkmark"></span>
                 </div>
-                <div class="">
-                  <p>90<br/>Days</p>
+                <div className="">
+                  <p>
+                    90
+                    <br />
+                    Days
+                  </p>
                   <input type="radio" name="radio" />
-                  <span class="checkmark"></span>
+                  <span className="checkmark"></span>
                 </div>
-                <div class="">
-                  <p>180<br/>Days</p>
+                <div className="">
+                  <p>
+                    180
+                    <br />
+                    Days
+                  </p>
                   <input type="radio" name="radio" />
-                  <span class="checkmark"></span>
+                  <span className="checkmark"></span>
                 </div>
-                <div class="">
-                  <p>365<br/>Days</p>
+                <div className="">
+                  <p>
+                    365
+                    <br />
+                    Days
+                  </p>
                   <input type="radio" name="radio" />
-                  <span class="checkmark"></span>
+                  <span className="checkmark"></span>
                 </div>
-                <div class="">
+                <div className="d-flex flex-column justify-content-center">
                   <p>MULTIPLER</p>
-                  <input type="radio" name="radio" />
-                  <span class="checkmark"></span>
+                  <label htmlFor="icon-switch" className="m-0">
+                    <Switch
+                      width={44}
+                      height={16}
+                      handleDiameter={12}
+                      checked={checked}
+                      offColor="#2C3036"
+                      onColor="#166bde"
+                      onChange={handleChange}
+                      uncheckedIcon={
+                        <span className="switch-label">Off</span>
+                      }
+                      checkedIcon={
+                        <span className="switch-label">On</span>
+                      }
+                      className="react-switch"
+                      id="icon-switch"
+                    />
+                  </label>
                 </div>
               </div>
             </div>
@@ -84,16 +119,14 @@ const CenterForm = ({ tab }) => {
             <p className="text-center mt-3">Select Token</p>
             <div className="input-area mt-2">
               <div className="input-area_row">
-                <div className="input-area_row_left_column">
-                  Input
-                </div>
+                <div className="input-area_row_left_column">Input</div>
                 <div className="input-area_row_right_column top-right-ab-pos">
                   Balance: 635.00028
                 </div>
               </div>
               <div className="input-area_row mt-5px">
                 <div className="input-area_row_left_column">
-                <input type="number" defaultValue={192.12400} />
+                  <input type="number" defaultValue={192.124} />
                 </div>
                 <div className="input-area_row_right_column">
                   <TokenSelect />
@@ -108,15 +141,15 @@ const CenterForm = ({ tab }) => {
               </div>
               <div className="input-area-with-header_area">
                 <p>
-                  0.33% <br/>
+                  0.33% <br />
                   Daily
                 </p>
                 <p>
-                  1% <br/>
+                  1% <br />
                   Monthly
                 </p>
                 <p>
-                  12% <br/>
+                  12% <br />
                   Yearly
                 </p>
               </div>
@@ -125,27 +158,25 @@ const CenterForm = ({ tab }) => {
         </div>
         <div className="row">
           <div className="col-lg-6">
-
             <div className="input-area-with-header mt-4">
               <div className="input-area-with-header_label ">
                 Price and share of pools
               </div>
               <div className="input-area-with-header_area">
                 <p>
-                  192.124 <br/>
+                  192.124 <br />
                   Example Per ETH
                 </p>
                 <p>
-                  1 <br/>
+                  1 <br />
                   ETH Per EXAMPLE
                 </p>
                 <p>
-                  0.06% <br/>
+                  0.06% <br />
                   Share Of Pool
                 </p>
               </div>
             </div>
-
           </div>
           <div className="col-lg-6">
             <div className="input-area-with-header mt-4">
@@ -154,19 +185,19 @@ const CenterForm = ({ tab }) => {
               </div>
               <div className="input-area-with-header_area">
                 <p>
-                  0.33% <br/>
+                  0.33% <br />
                   Daily
                 </p>
                 <p>
-                  10% <br/>
+                  10% <br />
                   Monthly
                 </p>
                 <p>
-                  120% <br/>
+                  120% <br />
                   Yearly
                 </p>
               </div>
-            </div>          
+            </div>
           </div>
         </div>
 
@@ -174,14 +205,11 @@ const CenterForm = ({ tab }) => {
           {/* <div className="btn-form-intro text-center w-100pc">
             RETURNS DO NOT INCLUDE RETURNS RECEIVED FROM UNISWAP TRADING FEES
           </div> */}
-          <button className="btn-form-submit mt-2">
-            Enter Pool & Stake
-          </button>
+          <button className="btn-form-submit mt-2">Enter Pool & Stake</button>
         </div>
       </div>
     </div>
   );
-}
-
+};
 
 export default CenterForm;

@@ -23,3 +23,14 @@
 .mt-37px {
   margin-top: 37px !important;
 }
+
+.react-switch {
+  border: 1px solid #515662;
+  .switch-label {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+  }
+}
