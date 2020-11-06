@@ -1,0 +1,133 @@
+.centerbody-container_header {
+  display: flex;
+  width: 100%;
+  color: white;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  img {
+    margin-right: 15px;
+    margin-left: 10px;
+    object-fit: contain;
+  }
+
+  .address-wrapper {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    padding-left: 6px;
+    padding-right: 6px;
+
+    &_first-section {
+      display: flex;
+      align-items: center;
+    }
+
+    &_second-section {
+      display: block;
+      flex-grow: 1;
+    }
+
+    &_title {
+      font-size: 19.4px;
+
+      img {
+        margin-left: 10px;
+      }
+    }
+
+    .input-gradient-wrapper {
+      background: linear-gradient(45deg,#2feec9,#166bde);
+      height: 35px;
+      border-radius: 7.4px;
+      padding: 2px;
+
+      .input-gradient {
+        width: 100%;
+        height: 100%;
+        background-color: #393939;
+        border-radius: 7.4px;
+        padding: 0 5px;
+
+        input {
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          color: white;
+        }
+        input:focus {
+          outline: none;
+        }
+      }
+    }
+
+
+    // input {
+    //   background-color: transparent;
+    //   border: 2px solid #707070;
+    //   border-radius: 7.4px;
+    //   width: 315px;
+    //   height: 37px;
+    //   line-height: 37px;
+    //   color: white;
+    // }
+  }
+}
+
+.show_responsive {
+  display: none !important;
+}
+.hide_responsive {
+  display: block !important;
+}
+
+
+@media only screen and (max-width: 1700px) {
+  .address-wrapper{
+    display: table !important;
+
+    &_first-section {
+      text-align: right !important;
+      display: table-cell !important;
+      align-items: center !important;
+      vertical-align: middle !important;
+    }
+
+    &_second-section {
+      display: table-cell !important;
+    }
+    &_title {
+      text-align: center;
+    }
+
+    input {
+      width: 100% !important;
+    }
+  }
+  
+  .show_responsive {
+    display: block !important;
+  }
+  .hide_responsive {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .address-wrapper{
+    &_title {
+      font-size: 14px !important;
+    }
+
+    img {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    // input {
+    //   font-size: 14px !important;
+    // }
+  }
+}

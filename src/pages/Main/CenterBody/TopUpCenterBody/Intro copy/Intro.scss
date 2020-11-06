@@ -1,0 +1,115 @@
+.centerbody-container_intro {
+  width: 100%;
+
+  color: white;
+  // display: table;
+  // table-layout:fixed;
+  // border-collapse: separate;
+  // border-spacing: 8px;
+
+  .first-section {
+    // display: table-cell;
+    // vertical-align: middle;
+
+    .intro-left {
+      // width: 100%;
+      // display: table;
+      // align-items: center;
+      // table-layout:fixed;
+      // border-collapse: separate;
+      // border-spacing: 15px;
+    
+      &_text {
+        font-size: 47px;
+        height: 103px;
+        line-height: 103px;
+        // display: table-cell;
+        background-image: linear-gradient(45deg,#2feec9,#166bde);
+        padding-left: 20px;
+      }
+    
+      &_token {
+        // display: table-cell;
+        margin-left: 20px;
+        background-image: linear-gradient(45deg,#2feec9,#166bde);
+        vertical-align: middle;
+        width: 103px;
+    
+        img {      
+          width: 62px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .second-section {
+    // display: table-cell;
+    // vertical-align: middle;
+    font-size: 53px;
+    line-height: 63px;
+    padding: 0;
+    text-align: center;
+
+    p { 
+      font-size: 16px;
+    }
+  }
+
+  .top-up-intro-text {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .centerbody-container_intro {
+    .first-section h2 {
+      font-size: 30px;
+    }
+    .second-section {
+      font-size: 45px;
+    }
+    .top-up-intro-text {
+      width: 320px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .centerbody-container_intro {
+    border-spacing: 5px;
+    
+    .first-section {
+      h2 {
+        font-size: 28px;
+      }
+      .intro-left_token img {
+        width: 38px;
+      }
+    }
+    .second-section {
+      font-size: 30px;
+    }
+
+    .top-up-intro-text {
+      width: 220px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .centerbody-container_intro {
+    display: block;
+    .first-section {
+      display: block;
+    }
+    .second-section {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 45px;
+    }
+  }
+}

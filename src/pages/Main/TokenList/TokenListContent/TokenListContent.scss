@@ -1,0 +1,106 @@
+.tokenlist-container_tokenlist-content {
+  flex-grow: 1;
+  color: black;
+  background-color: white;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  position: relative;
+  
+
+  &_title {
+    font-size: 12px;
+    padding-top: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  &_body {
+    font-size: 12px;
+    padding: 14px 14px 0px 14px;
+
+    .select-search {
+      margin-top: 10px;
+      &__value {
+        background-image: linear-gradient(45deg, #2feec9, #166bde);
+        padding: 2px;
+        border-radius: 9px;
+
+        input {
+          width: 100%;
+          border-radius: 7px;
+          border: none;
+          font-size: 12px;
+          padding: 10px;
+        }    
+      }
+    
+      &__options {
+        padding-left: 0px;
+        list-style-type: none;
+        font-size: 12px;
+        .select-search__row {
+          margin-top: 10px;
+          .token-list_item {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  &_bottom {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    border-top: 1px solid #707070;
+    font-size: 12px;
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (min-width: 1080px) and (max-width: 1280px) { 
+  .tokenlist-container_tokenlist-content_body .select-search {
+    &__options {
+      .token-list_item {
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        span {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1079px) { 
+  .tokenlist-container_tokenlist-content_body .select-search {
+    &__options {
+      .token-list_item {
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        span {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 980px) { 
+  .tokenlist-container_tokenlist-content{
+    padding-bottom: 40px;
+    border-radius: 0;
+
+    .select-search__options {
+      height: 132px;
+      overflow-y: auto;
+    }
+  }
+}

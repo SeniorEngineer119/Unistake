@@ -1,0 +1,51 @@
+.tokenlist-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #393939;
+
+  &_title {
+    height: 100px;
+    background-color: #00020D;
+    position: relative;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 28px;
+    padding-right: 28px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    img {
+      width: 56px;
+    }
+  }
+
+  &_empty-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    color: white;
+    background-color: #282B31;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    .medium-txt {
+      font-size: 31px;
+    }
+
+    .small-txt {
+      font-size: 22px;
+      margin-top: 20px;
+    }
+  }  
+}
+
+
+@media only screen and (max-width: 980px) {
+  .tokenlist-container_empty-content {
+    display: none;
+  }
+}

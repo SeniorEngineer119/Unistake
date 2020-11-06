@@ -1,0 +1,25 @@
+.tradition-intro-text {
+  width: 380px;
+  font-weight: 100;
+}
+
+
+@media only screen and (max-width: 1700px) {
+  .tradition-intro-text {
+    font-size: 30px !important;
+    width: 240px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .centerbody-container_intro_rect {
+    font-size: 20px !important;
+  }
+  .tradition-intro-text {
+    width: 190px;
+    font-size: 25px !important;
+    p {
+      font-size: 12px !important;
+    }
+  }
+}

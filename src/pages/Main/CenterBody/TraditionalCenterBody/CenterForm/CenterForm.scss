@@ -1,0 +1,25 @@
+.centerform-two-columns-container {
+  max-width: 717px;
+  // background-color: #212429 !important;
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    .btn-form-submit {
+      margin-left: 6px;
+      margin-left: 6px;
+    }
+  }
+  .input-area-with-header_area {
+    justify-content: space-around !important;
+    // background-color: #212429;
+  }
+  .col-lg-6 {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+.mt-37px {
+  margin-top: 37px !important;
+}
