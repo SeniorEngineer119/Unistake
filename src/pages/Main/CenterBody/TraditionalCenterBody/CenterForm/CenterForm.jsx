@@ -98,12 +98,8 @@ const CenterForm = ({ tab }) => {
                       offColor="#2C3036"
                       onColor="#166bde"
                       onChange={handleChange}
-                      uncheckedIcon={
-                        <span className="switch-label">Off</span>
-                      }
-                      checkedIcon={
-                        <span className="switch-label">On</span>
-                      }
+                      uncheckedIcon={<span className="switch-label">Off</span>}
+                      checkedIcon={<span className="switch-label">On</span>}
                       className="react-switch"
                       id="icon-switch"
                     />
@@ -126,7 +122,8 @@ const CenterForm = ({ tab }) => {
               </div>
               <div className="input-area_row mt-5px">
                 <div className="input-area_row_left_column">
-                  <input type="number" defaultValue={192.124} />
+                  <InputWithButton maxValue={192.124} />
+                  {/* <input type="number" defaultValue={192.124} /> */}
                 </div>
                 <div className="input-area_row_right_column">
                   <TokenSelect />

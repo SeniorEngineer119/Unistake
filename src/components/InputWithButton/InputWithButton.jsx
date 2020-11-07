@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './inputWithButton.scss';
 
-const InputWithButton = ({defaultValue, maxValue}) => {
+const InputWithButton = ({ defaultValue, maxValue }) => {
   const [showMax, setShowMax] = useState(true);
 
   const [value, setValue] = useState(defaultValue || 0);
@@ -13,7 +13,7 @@ const InputWithButton = ({defaultValue, maxValue}) => {
   const onClickMax = () => {
     setValue(maxValue);
     setShowMax(false);
-  }
+  };
 
   return (
     <div className="embed-submit-field">
