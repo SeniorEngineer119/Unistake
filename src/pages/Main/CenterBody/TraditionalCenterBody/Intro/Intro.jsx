@@ -22,7 +22,7 @@ const Intro = ({ tab }) => {
       </div>
       <div className="centerbody-container_text_responsive">
         Provide Liquidity
-        <p className="text-center">
+        <p className="text-center d-sm-none">
           Via Unistake Traditional Contract
         </p>
       </div>

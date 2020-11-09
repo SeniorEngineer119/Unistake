@@ -4,7 +4,7 @@
 }
 
 
-@media only screen and (max-width: 1700px) {
+@media only screen and (min-width: 1400px) {
   .tradition-intro-text {
     font-size: 30px !important;
     width: 240px;
@@ -12,9 +12,6 @@
 }
 
 @media only screen and (max-width: 1400px) {
-  .centerbody-container_intro_rect {
-    font-size: 20px !important;
-  }
   .tradition-intro-text {
     width: 190px;
     font-size: 25px !important;

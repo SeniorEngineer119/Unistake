@@ -10,15 +10,16 @@ export default function Main() {
 
   return (
     <div className="main-container">
-      <div className="left-side">
-        <SideTabs tab={tab} updateTab={(newTab) => setTab(newTab)} />
+      <div className="right-side">
+        <TokenList tab={tab} updateTab={(newTab) => setTab(newTab)} />
       </div>
 
       <div className="center-body">
         <CenterBody tab={tab} />
       </div>
-      <div className="right-side">
-        <TokenList tab={tab} />
+
+      <div className="left-side">
+        <SideTabs tab={tab} updateTab={(newTab) => setTab(newTab)} />
       </div>
     </div>
   );
