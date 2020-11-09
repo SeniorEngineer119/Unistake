@@ -6,8 +6,8 @@ import './Header.scss';
 
 const Header = ({ tab }) => {
   return (
-    <div className="centerbody-container_header">
-      <div className="address-wrapper">
+    <div className="centerbody-container_header row">
+      <div className="address-wrapper col-md-6 col-sm-12">
         <div className="address-wrapper_first-section">
           <span className="address-wrapper_title hide_responsive">
             Connected Contract
@@ -26,7 +26,7 @@ const Header = ({ tab }) => {
         </div>        
       </div>
 
-      <div className="address-wrapper">
+      <div className="address-wrapper col-md-6 col-sm-12">
         <div  className="address-wrapper_first-section">
           <span className="address-wrapper_title hide_responsive">
             Connected Address
