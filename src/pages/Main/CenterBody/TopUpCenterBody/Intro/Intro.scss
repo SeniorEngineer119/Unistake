@@ -9,7 +9,9 @@
   border-spacing: 12px; 
     
   &_rect {
+    flex: 1;
     min-width: 350px;
+    max-width: 600px;
     font-size: 47px;
     height: 103px;
     line-height: 103px;    
@@ -102,9 +104,6 @@
       display: table-cell;
     }
 
-    &_token {
-      display: table-cell;
-    }
     &_text {
       // display: block;
       // width: 100%;
