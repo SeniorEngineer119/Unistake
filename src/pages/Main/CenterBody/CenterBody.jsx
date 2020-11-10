@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Header from './Header';
+import MobileHeader from './MobileHeader';
 import TransferCenterBody from './TransferCenterBody';
 import TopUpCenterBody from './TopUpCenterBody';
 import LockupCenterBody from './LockupCenterBody';
@@ -30,6 +31,7 @@ const CenterBody = (props) => {
     <div className="centerbody-container">
       <Header/>
       {renderCenter(props.tab)}
+      <MobileHeader/>
     </div>    
   )
   

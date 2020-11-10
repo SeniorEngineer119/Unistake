@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #393939;
 
   &_title {
     height: 100px;
@@ -28,7 +27,7 @@
     align-items: center;
     flex-grow: 1;
     color: white;
-    background-color: #282B31;
+    background-color: #00040c44;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 
@@ -49,12 +48,12 @@
   }
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 979px) {
   .tokenlist-container {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: #393939;
+    background-color: #00040c;
 
     .navbar {
       padding: 12px 1rem !important;
@@ -120,6 +119,10 @@
           }
         }
       }
+    }
+
+    &_empty-content {
+      display: none !important;
     }
   }
 }

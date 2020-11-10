@@ -4,6 +4,10 @@
   width: 100%;
   min-height: 100vh;
   background-color: #2b2b2b;
+  background-image: url(../../static/images/background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   .left-side {
     display: inline-block;
@@ -18,13 +22,12 @@
 
     width: 66%;
     position: relative;
-    background-color: #393939;
   }
   
   .right-side {
     display: inline-block;
     width: 17%;    
-    background-color: #393939;
+    background-color: #00040c44;
     border-radius: 20px;
     align-items: center;
     position: relative;
@@ -58,6 +61,7 @@
     .center-body {
       width: 100%;
       max-width: 100%;
+      min-height: calc(100% - 60px);
     }
     
     .right-side {
